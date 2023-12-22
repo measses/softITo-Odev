@@ -1,0 +1,237 @@
+body, h1, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+  }
+
+  /* Navbar Styles */
+  .navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .navbar .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar .logo img {
+    margin-right: 10px;
+  }
+
+  .navbar h1 {
+    font-size: 24px;
+    color: #333;
+  }
+
+  .navbar ul {
+    display: flex;
+    gap: 20px;
+  }
+
+  .navbar ul li {
+    list-style-type: none;
+  }
+
+  .navbar ul li a {
+    color: #333;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+  }
+
+  .navbar ul li a:hover {
+    background-color: #ddd;
+  }
+
+  .navbar .buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .navbar .buttons button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f0ad4e;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+  }
+
+  .navbar .buttons .first-button{
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    color: black;
+  }
+  .navbar .buttons .second-button{
+    border-radius: 20px;
+    background-color: #ffc107;
+    color: black;
+  }
+
+
+
+  .navbar .buttons button:hover {
+    background-color: #ec971f;
+  }
+
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 40px;
+    background-color: #f8f9fa;
+  }
+
+  .hero-content {
+    max-width: 50%;
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+
+  .hero-content button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    background-color: #ffc107;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 20px;
+  }
+
+  .hero-content button:last-child {
+    background-color: #6c757d;
+  }
+
+  .hero-content button:hover {
+    opacity: 0.9;
+  }
+
+  .hero-image {
+    max-width: 50%;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .social-media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+
+  .social-media-links img {
+    height: 30px; /* Adjust as necessary */
+    transition: transform 0.3s ease;
+  }
+
+  .social-media-links img:hover {
+    transform: scale(1.1);
+  }
+
+  /* Add a specific class for each logo if they need individual styling */
+  .youtube-logo {
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.1));
+  }
+
+  .about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f8f9fa;
+  }
+
+  .about-section .image-container {
+    flex: 1;
+    padding-right: 20px;
+  }
+
+  .about-section .content-container {
+    flex: 1;
+    padding-left: 20px;
+  }
+
+  .about-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .about-section h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .about-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+
+  .about-section ul {
+    list-style: none;
+  }
+
+  .about-section li {
+    padding: 5px 0;
+    font-size: 16px;
+    color: #666;
+  }
+
+  .about-section li::before {
+    content: '• ';
+    color: #ffc107; /* Or your chosen bullet color */
+    font-weight: bold;
+  }
+
+  .about-section button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .about-section button:hover {
+    background-color: #0056b3;
+  }
+
+  .content-container button{
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    color: black;
+
+  }
