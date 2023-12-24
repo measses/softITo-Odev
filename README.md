@@ -4,7 +4,7 @@ Bu depo, SoftITo Yazılım Bilişim Akademisi Front-End Bootcamp kapsamında yap
 
 ## Ödevler
 
-1. [Ödev 1](/[odev1](https://github.com/measses/softITo-Odev/tree/main/SoftITo-Odev-1)/)
+1. [Ödev 1](/https://github.com/measses/softITo-Odev/tree/main/SoftITo-Odev-1/)
 2. [Ödev 2](/odev2/): Ödev 2 açıklaması buraya yazılır.
 3. [Ödev 3](/odev3/): Ödev 3 açıklaması buraya yazılır.
 4. ...
