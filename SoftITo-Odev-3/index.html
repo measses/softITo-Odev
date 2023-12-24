@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Demo Project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <style>
+        .mx-6 {
+            margin-left: 8rem;
+        }
+
+        .yellow {
+            background-color: #bcf414f5;
+        }
+
+        .image-overlay-container {
+            position: relative;
+            width: 100%;
+            height: auto; 
+            max-height: 400px;
+        }
+        .image-overlay-container img {
+            max-height: 100%;
+            object-fit: cover; 
+        }
+        .image-back {
+            width: 100%;
+        }
+        .image-top {
+            position: absolute;
+            top: 10%; 
+            left: 20%; 
+            width: 60%; 
+            z-index: 10; 
+        }
+        @media (max-width: 768px) {
+            .image-top {
+                top: 5%; 
+                left: 10%; 
+                width: 80%; 
+            }
+            .image-overlay-container {
+                max-height: 200px; 
+            }
+        }
+        .image-first{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="youtube.svg" alt="Logo" height="80">
+            Youtube Video Creator
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mx-6" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Episodes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+            </ul>
+        </div>
+        <div class="buttons col-12 col-lg-2 mt-3 mt-lg-0 text-center text-lg-right">
+            <button class="btn btn-light btn-outline-secondary rounded-pill mx-2">Last Video</button>
+            <button class="btn yellow rounded-pill">Subscribe</button>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-6 order-lg-12 text-center"> 
+            <h1>An YouTube Channel for entrepreneurs</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor viverra eget sit sapien, velit
+                scelerisque volutpat vitae.</p>
+            <button class="btn yellow btn-outline-secondary rounded-pill">Subscribe</button>
+            <button class="btn btn-outline-light text-dark  rounded-pill">Last Video</button>
+        </div>
+        <div class="col-lg-6 order-lg-6 mt-2 text-center"> 
+            <img src="youtube_maker.png" alt="Entrepreneur Filming" class="img-fluid rounded">
+        </div>
+    </div>
+</div>
+
+<div class="container text-center mt-5">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-12 col-lg-auto mb-3 mb-lg-0">
+            <p>Videos available at</p>
+        </div>
+        <div class="col-12 col-lg-auto mb-3 mb-lg-0">
+            <img src="youtube.svg" alt="YouTube" height="80"> 
+        </div>
+        <div class="col-12 col-lg-auto mb-3 mb-lg-0">
+            <img src="twitch-horizontal.svg" alt="Twitch" height="30"> 
+        </div>
+        <div class="col-12 col-lg-auto mb-3 mb-lg-0">
+            <img src="/Facebook-Logo.wine.svg" alt="Facebook" height="80"> 
+        </div>
+        <div class="col-12 col-lg-auto mb-3 mb-lg-0">
+            <img src="webflow.svg" alt="Webflow" height="30"> 
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="image-overlay-container">
+                <img src="photo-1.jpg" alt="Person Editing Video" class="img-fluid rounded image-back image-first">
+                <img src="photo-2.jpg" alt="Person Filming" class="img-fluid rounded image-top image-second">
+            </div>
+        </div>
+        <div class="col-lg-6 mt-4">
+            <h2>About the show</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil non ad aliquid, hic quam nostrum officiis nobis recusandae dolorum enim.</p>
+            <ul>
+                <li>Created for young entrepreneurs</li>
+                <li>New videos every week</li>
+                <li>Interviews with famous guests</li>
+            </ul>
+            <button class="btn btn-outline-light text-dark">Learn More</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+<!-- Copyrights-->
+<div class="container-fluid bg-dark text-light text-center py-3">
+    <p class="mb-0">© 2023 Created by Mert Araz.</p>
+</footer>
+</body>
+</html>
