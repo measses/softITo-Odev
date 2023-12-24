@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+#numberList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px; 
+    margin-top: 20px;
+}
+
+.number {
+    padding: 10px;
+    background-color: #95e5e4; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+/* Buton Stili */
+#generateButton {
+    padding: 10px 20px;
+    background-color: #007bff; 
+    color: white;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    font-size: 16px; 
+}
+
+
+#generateButton:hover {
+    background-color: #0056b3; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#generateFibonacciButton{
+    padding: 10px 20px;
+    background-color: #874bff; 
+    color: white;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    font-size: 16px; 
+}
+
+#generateFibonacciButton:hover {
+    background-color: #542896; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#fibonacciList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px; 
+    margin-top: 20px;
+}
+
+/* Mevcut stil kuralları */
+
+#generateDivisorsButton {
+    padding: 10px 20px;
+    background-color: #ff4b4b; /* Kırmızı arkaplan rengi */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+#generateDivisorsButton:hover {
+    background-color: #cc3939; /* Daha koyu kırmızı */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#divisorsList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input, button {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+#sonuc {
+    margin-top: 20px;
+    font-size: 20px;
+}
