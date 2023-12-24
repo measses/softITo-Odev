@@ -4,9 +4,9 @@ Bu depo, SoftITo Yazılım Bilişim Akademisi Front-End Bootcamp kapsamında yap
 
 ## Ödevler
 
-1. [Ödev 1](/SoftITo-Odev-1/)
-2. [Ödev 2](/SoftITo-Odev-2/): 
-3. [Ödev 3](/odev3/): 
+1. [Ödev 1](/SoftITo-Odev-1/): HTML ve CSS kullanarak web sayfa tasarlamak.
+2. [Ödev 2](/SoftITo-Odev-2/): Algoritma sorularını Flowchart ve Javascript ile çözümlemek.
+3. [Ödev 3](/odev3/): Bootstrap 5 ile web sayfası tasarlamak.
 
 
 ## Katkıda Bulunma
