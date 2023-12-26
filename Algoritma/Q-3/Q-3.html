@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Elements and Count</title>
+</head>
+<body>
+    <h1>Remove Elements and Count</h1>
+
+    <script>
+        function removeAndCount(nums, val) {
+            let k = 0; 
+            for (let i = 0; i < nums.length; i++) {
+                if (nums[i] !== val) {
+                    nums[k] = nums[i]; 
+                    k++;
+                }
+            }
+            return k;
+        }
+
+        // Test
+        const nums = [3, 2, 2, 3, 4, 3];
+        const val = 3;
+
+        const k = removeAndCount(nums, val);
+        console.log("Dizi Son Hali:", nums.slice(0, k)); 
+        console.log("Geçerli Olmayan Eleman Sayısı:", k);
+    </script>
+</body>
+</html>

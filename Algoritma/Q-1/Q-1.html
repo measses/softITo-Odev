@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parantez Geçerliliği Kontrolü</title>
+</head>
+<body>
+
+   <!-- 
+    
+        Verilen bir string (s) içerisinde yalnızca '(', ')', '{', '}', '[' ve ']' karakterlerini içerir. 
+        Bu giriş stringinin geçerli olup olmadığını belirlemek gerekiyor. Bir giriş stringi geçerli ise şu kurallara uymalıdır:
+
+        1)Açma parantezleri ( '(', '{', '[' ) kapanma parantezleri ile (')', '}', ']') aynı türden olmalıdır.
+        2)Açma parantezleri doğru sırayla kapanmalıdır.
+        3)Her kapanma parantezi, aynı türden bir açma parantezi ile eşleşmelidir.
+
+-->
+
+    <h1>Parantez Geçerliliği Kontrolü</h1>
+    <p>Giriş Dizesi: <input type="text" id="inputString"></p>
+    <button onclick="checkValidity()">Kontrol Et</button>
+    <p id="result"></p>
+
+    <script>
+        function isValid(s) {
+            const stack = [];
+            const openingBrackets = ['(', '{', '['];
+            const closingBrackets = [')', '}', ']'];
+
+            for (let i = 0; i < s.length; i++) {
+                const char = s[i];
+
+                if (openingBrackets.includes(char)) {
+                    stack.push(char);
+                } else if (closingBrackets.includes(char)) {
+                    if (stack.length === 0 || !isMatchingPair(stack.pop(), char)) {
+                        return false;
+                    }
+                }
+            }
+
+            return stack.length === 0;
+        }
+
+        function isMatchingPair(open, close) {
+            return (
+                (open === '(' && close === ')') ||
+                (open === '{' && close === '}') ||
+                (open === '[' && close === ']')
+            );
+        }
+
+        function checkValidity() {
+            const inputString = document.getElementById("inputString").value;
+            const result = isValid(inputString);
+            const resultElement = document.getElementById("result");
+
+            if (result) {
+                resultElement.textContent = "Geçerli";
+                console.log(result);
+            } else {
+                resultElement.textContent = "Geçersiz";
+
+            }
+        }
+    </script>
+</body>
+</html>
