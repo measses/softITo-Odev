@@ -1,0 +1,30 @@
+
+<div>
+  <h2>Sayıların Toplamı</h2>
+  <form (submit)="hesaplaToplam()">
+    <label for="sayilar">Sayıları girin (virgülle ayırın):</label>
+    <input type="text" id="sayilar" [(ngModel)]="sayilarStr" name="sayilar" required>
+    <button type="submit">Toplamı Hesapla</button>
+  </form>
+  <p *ngIf="toplam !== null">Toplam: {{ toplam }}</p>
+</div>
+
+<div>
+  <h2>Metin Analizi</h2>
+  <label for="metin">Metni girin:</label>
+  <textarea id="metin" [(ngModel)]="metin" name="metin" rows="4" cols="50" required></textarea>
+  <br>
+  <button (click)="analizleMetin()">Metni Analiz Et</button>
+  <p *ngIf="kelimeSayisi > 0">Kelime Sayısı: {{ kelimeSayisi }}</p>
+  <p *ngIf="karakterSayisi > 0">Karakter Sayısı: {{ karakterSayisi }}</p>
+</div>
+
+<div>
+  <h2>Faktoriyel Hesaplama</h2>
+  <label for="sayi">Bir sayı girin:</label>
+  <input type="number" id="sayi" [(ngModel)]="girilenSayi" name="sayi" required>
+  <br>
+  <button (click)="faktoriyelHesapla()">Faktoriyel Hesapla</button>
+  <p *ngIf="sonuc !== undefined">{{ girilenSayi }}! = {{ sonuc }}</p>
+</div>
+
