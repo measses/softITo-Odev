@@ -1,0 +1,17 @@
+<div class="container d-flex align-items-center flex-column">
+  <div class="wave-container position-relative">
+    <div class="wave-top position-absolute d-flex">
+      <div class="wave-part">{{ wave1[0] }}</div>
+      <div class="wave-part">{{ wave1[1] }}</div>
+      <div class="wave-part">{{ wave1[2] }}</div>
+      <div class="wave-part">{{ wave1[3] }}</div>
+    </div>
+    <div class="wave-bottom d-flex mt-5">
+      <div class="wave-part">{{ wave2[0] }}</div>
+      <div class="wave-part">{{ wave2[1] }}</div>
+      <div class="wave-part">{{ wave2[2] }}</div>
+      <div class="wave-part">{{ wave2[3] }}</div>
+    </div>
+  </div>
+  <button (click)="waveStartLeft()">Start</button>
+</div>
