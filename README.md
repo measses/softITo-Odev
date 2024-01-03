@@ -8,6 +8,7 @@ Bu depo, SoftITo Yazılım Bilişim Akademisi Front-End Bootcamp kapsamında yap
 2. [Ödev 2](/SoftITo-Odev-2/): Algoritma sorularını Flowchart ve Javascript ile çözümlemek.
 3. [Ödev 3](/SoftITo-Odev-3/): Bootstrap 5 ile web sayfası tasarlamak.
 4. [Ödev 4](/SoftITo-Odev-4/): Angular & TypeScript kullanarak; Sepet uygulaması, Kapı Open-Close animasyonu, Multi-Text animasyonu, Meksika Dalgası animasyonu yaptım.
+5. [Ödev 5](/SoftITo-Odev-5/): Angular & TypeScript kullanarak; Alışveriş Uygulaması.
 
 
 ## Katkıda Bulunma
