@@ -1,0 +1,33 @@
+<div
+  class="table-responsive"
+>
+<table class="table table-primary">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Category Id</th>
+      <th scope="col">Sepete Ekle</th>
+      <th scope="col">Image</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Description</th>
+      <th scope="col">Created Date</th>
+      <th scope="col">Is Active</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of productList">
+      <td scope="row">{{ product.id }}</td>
+      <td>{{ product.categoryId }}</td>
+      <td><button class="btn btn-primary" (click)="addCart()">Sepete Ekle</button></td>
+      <td><img [src]="product.image.small" /></td>
+      <td>{{ product.name }}</td>
+      <td>{{ product.price }}</td>
+      <td>{{ product.description }}</td>
+      <td>{{ product.createdDate | date:'dd/MM/yyyy HH:mm' }}</td>
+      <td>{{ product.isActive }}</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
