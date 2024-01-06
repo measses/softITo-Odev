@@ -1,0 +1,19 @@
+<div class="product-container">
+  <div *ngFor="let product of productList" class="product-card">
+    <img [src]="product.image.small" alt="{{ product.name }}" class="product-image">
+    <div class="product-info">
+      <h5 class="product-name">{{ product.name }}</h5>
+      <p class="product-price">{{ product.price | currency }}</p>
+      <p class="product-description">{{ product.description }}</p>
+      <p class="product-category">Kategori: {{ product.categoryId }}</p>
+
+      <div class="product-actions">
+        <button class="btn btn-primary" (click)="addCart(product)">Sepete Ekle</button>
+        <div class="quantity-control">
+          <button class="btn btn-quantity" (click)="decrementQuantity(product)">-</button>
+          <button class="btn btn-quantity" (click)="incrementQuantity(product)">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

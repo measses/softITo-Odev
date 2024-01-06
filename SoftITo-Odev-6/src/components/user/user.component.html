@@ -1,0 +1,17 @@
+<div *ngIf="getSelectedUser()" class="alert alert-success">
+  {{ getSelectedUser()?.fullName}} kullanıcısı seçildi.
+</div>
+<div *ngIf="!getSelectedUser()" class="alert alert-danger">
+  Lütfen kullanıcı seçiniz.
+</div>
+
+<div class="user-container">
+  <div *ngFor="let user of users" class="user-card">
+    <div class="user-info">
+      <h5 class="user-name">{{ user.fullName }}</h5>
+      <button *ngIf="getSelectedUser()?.id != user.id"
+              class="btn btn-primary"
+              (click)="selectUser(user)">Select</button>
+    </div>
+  </div>
+</div>
