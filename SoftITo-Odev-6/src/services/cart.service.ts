@@ -83,4 +83,14 @@ export class CartService {
 
 
   }
+
+  removeQuantity(item: CartItem){
+    if(item.count>1){
+      item.count-=1;
+    }
+  }
+
+  getTotalPrice(): number {
+      return this.getUserCart()?.items?.reduce((total, item) => total + item.productPrice * item.count, 0) ?? 0;
+    }
 }

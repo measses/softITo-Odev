@@ -1,8 +1,13 @@
 <div *ngIf="cartService.getSelectedUser()" class="cart-container">
   <h2>{{ cartService.getSelectedUser()?.fullName }}'nin Sepeti</h2>
-  <div *ngFor="let items of cartService.getUserCart()?.items" class="cart-item">
-    <p>{{ items.productName }}</p>
-    <p>Fiyat: {{ items.productPrice | currency }}</p>
-    <p>Miktar: {{ items.count }}</p>
+  <div *ngFor="let item of cartService.getUserCart()?.items" class="cart-item">
+    <p>{{ item.productName }}</p>
+    <p>Fiyat: {{ item.productPrice | currency }}</p>
+    <div class="quantity-control">
+      <button (click)="cartService.decrementQuantity(item)">-</button>
+      <span>{{ item.count }}</span>
+      <button (click)="cartService.incrementQuantity(item)">+</button>
+    </div>
   </div>
+  <h5>Toplam Fiyat: {{ cartService.getTotalPrice() | currency }} </h5>
 </div>
